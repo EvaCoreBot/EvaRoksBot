@@ -6,3 +6,6 @@ python-docx
 python-dotenv
 pandas
 openpyxl
+PyMuPDF
+pytesseract
+Pillow
