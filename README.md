@@ -1,16 +1,33 @@
-## Hi there 👋
+# EvaRoksBot
 
-<!--
-**EvaCoreBot/evacorebot** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Prototype Telegram bot for basic legal document handling. It uses
+`python-telegram-bot` and includes handlers for generating documents,
+extracting text from uploads and showing history.
 
-Here are some ideas to get you started:
+## Quick start
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+1. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+2. Set the Telegram bot token in the `TELEGRAM_TOKEN` environment variable and your Google Gemini key in `GEMINI_API_KEY`.
+
+```bash
+export TELEGRAM_TOKEN=your_token
+export GEMINI_API_KEY=your_gemini_key
+```
+
+3. Run the bot locally:
+
+```bash
+python bot.py
+```
+
+Commands available:
+
+- `/doc` – отправить PDF/DOCX/изображение и получить текстовую выжимку;
+- `/generate` – создать DOCX через Gemini по заданной теме;
+- `/history` – список ранее обработанных файлов;
+- `/risk`, `/review`, `/prompt` – демонстрационные ответы.
