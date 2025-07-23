@@ -12,11 +12,11 @@ extracting text from uploads and showing history.
 pip install -r requirements.txt
 ```
 
-2. Set the Telegram bot token in the `TELEGRAM_TOKEN` environment variable and your Google Gemini key in `GEMINI_API_KEY`.
+2. Create a `.env` file and place your credentials there:
 
-```bash
-export TELEGRAM_TOKEN=your_token
-export GEMINI_API_KEY=your_gemini_key
+```
+TELEGRAM_TOKEN=your_token
+GEMINI_API_KEY=your_gemini_key
 ```
 
 3. Run the bot locally:
