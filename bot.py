@@ -1,4 +1,5 @@
 import os
+from dotenv import load_dotenv
 from telegram.ext import ApplicationBuilder, CommandHandler
 from modules.doc_handler import handle_doc
 from modules.risk_handler import handle_risk
@@ -6,6 +7,8 @@ from modules.review_handler import handle_review
 from modules.prompt_handler import handle_prompt
 from modules.generate_handler import handle_generate
 from modules.history_handler import handle_history
+
+load_dotenv()
 
 async def start(update, context):
     await update.message.reply_text(
